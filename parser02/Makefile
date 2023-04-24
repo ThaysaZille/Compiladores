@@ -1,8 +1,7 @@
-CC=gcc
-CFLAGS=-Wall -Wextra -Wpedantic -std=c99
+build:main
 
-build: main.c
-		$(CC) $(CFLAGS) -o tokens main.c
+main: main.c
+		gcc =o main main.c tinyexpr.c -ln
 
 clean:
-		rm -f tokens
+		rm -f main
